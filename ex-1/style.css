@@ -1,3 +1,33 @@
+:root {
+  /* Colors */
+  --branding-color: #ff7f50;
+  --secondary-color: cornsilk;
+  --highlight-color: #d2691e;
+  --muted-color: #a9a9a9;
+
+  /* Margin Levels */
+  --margin-1: 1px;
+  --margin-2: 5px;
+  --margin-3: 10px;
+  --margin-4: 15px;
+  --margin-5: 20px;
+
+  /* Padding Levels */
+  --padding-1: 1px;
+  --padding-2: 5px;
+  --padding-3: 10px;
+  --padding-4: 15px;
+  --padding-5: 20px;
+
+  /* Font Sizes */
+  --size-small: 12px;
+  --size-medium: 16px;
+  --size-large: 20px;
+  --size-xlarge: 30px;
+  --size-2xlarge: 50px;
+  --size-3xlarge: 100px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,32 +41,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-      background: linear-gradient(
-        30deg,
-        hsl(0, 100%, 70%),
-        hsl(240, 100%, 70%)
-      );
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+  background: linear-gradient(
+    30deg,
+    hsl(0, 100%, 70%),
+    hsl(240, 100%, 70%)
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .introduction {
-      background-color: hsla(0, 50%, 100%, 0.5);
-      padding: 30px;
-      max-width: 600px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-    
-    .introduction h2 {
-    margin-top: 10;
-    font-size: 24px;
-  }
+.introduction {
+  background-color: var(--secondary-color);
+  padding: var(--padding-5);               
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-  .introduction p {
-    margin: 10px 0;
-    text-align: center;
-    line-height: 1.6;
-    color: #222;
-    font-size: 14px;
-  }
+.introduction h1 {
+  color: var(--branding-color);     
+  font-size: var(--size-3xlarge);      
+}
+
+.introduction h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.introduction p {
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.6;
+  color: #222;
+  font-size: 14px;
+}
