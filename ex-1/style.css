@@ -4,4 +4,39 @@
   margin: 0;
 }
 
-/* Start coding here */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      background: linear-gradient(
+        30deg,
+        hsl(0, 100%, 70%),
+        hsl(240, 100%, 70%)
+      );
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+  .introduction {
+      background-color: hsla(0, 50%, 100%, 0.5);
+      padding: 30px;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    .introduction h2 {
+    margin-top: 10;
+    font-size: 24px;
+  }
+
+  .introduction p {
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.6;
+    color: #222;
+    font-size: 14px;
+  }
